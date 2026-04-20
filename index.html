@@ -54,13 +54,6 @@
             animation-duration: 14s;
             animation-delay: -4s;
         }
-        .sphere-3 {
-            width: 40vw; height: 40vw;
-            background: var(--astra-gold);
-            top: 30%; left: 20%;
-            opacity: 0.05;
-            animation-duration: 22s;
-        }
 
         @keyframes pulse-glow {
             0% { transform: translate(0, 0) scale(1); opacity: 0.1; }
@@ -133,7 +126,7 @@
             -webkit-text-fill-color: transparent;
         }
 
-        /* Social Icons Fixed */
+        /* Social Icons Fixed Styles */
         .social-btn {
             width: 54px;
             height: 54px;
@@ -145,6 +138,7 @@
             justify-content: center;
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             color: #94a3b8;
+            cursor: pointer;
         }
         .social-btn:hover {
             background: rgba(255, 255, 255, 0.1);
@@ -165,7 +159,6 @@
     <div class="glow-bg">
         <div class="glow-sphere sphere-1"></div>
         <div class="glow-sphere sphere-2"></div>
-        <div class="glow-sphere sphere-3"></div>
     </div>
 
     <!-- Navigation -->
@@ -204,7 +197,7 @@
     <section class="min-h-[65vh] flex flex-col justify-center items-center px-6 relative z-10 text-center">
         <div class="reveal active">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-400 text-[9px] font-bold tracking-[0.4em] uppercase mb-8">
-                Nursing Innovation • Internal Medicine Ichilov
+                Clinical Intelligence • Ichilov Hospital
             </div>
             <h1 class="text-6xl md:text-8xl font-black mb-4 text-white tracking-tighter leading-none" style="text-shadow: 0 0 30px rgba(255,255,255,0.1);">אחיות פנימית 2.0</h1>
             <p class="text-xl md:text-2xl font-light text-slate-400 max-w-3xl mx-auto leading-relaxed mb-10">
@@ -305,7 +298,7 @@
                 <div class="glass-card p-6 rounded-3xl">
                     <div class="flex justify-between items-center mb-3">
                         <span class="text-slate-500 font-black tracking-widest text-[9px] uppercase">SESSION 06</span>
-                        <span class="text-blue-400">30 דקות</span>
+                        <span class="text-white/30 text-[10px] font-bold">30 דקות</span>
                     </div>
                     <h4 class="text-xl font-bold mb-1">Flow: יצירת סרטוני הדרכה</h4>
                     <p class="text-slate-400 text-sm italic">המחשה ויזואלית מהירה של פרוטוקולים ונהלים.</p>
@@ -372,7 +365,9 @@
         <div class="absolute bottom-10 left-10 z-30 group">
             <div class="absolute -inset-2 bg-gradient-to-r from-astra-gold/50 to-astra-purple/50 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition duration-500"></div>
             <div class="relative w-20 h-20 md:w-28 md:h-28 rounded-[2rem] overflow-hidden bg-white flex items-center justify-center p-3 border border-white shadow-2xl transition-transform duration-500 group-hover:scale-105">
-                <div class="w-full h-full bg-slate-50 rounded-lg flex items-center justify-center text-slate-300 font-black text-3xl">T</div>
+                <!-- User Logo Integration -->
+                <img src="logo.png" alt="לוגו" class="w-full h-full object-contain" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="hidden w-full h-full bg-slate-50 rounded-lg items-center justify-center text-slate-300 font-black text-3xl">T</div>
             </div>
         </div>
 
@@ -387,7 +382,7 @@
                     <img src="tiferet.jpeg" alt="תפארת אליאב" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.style.opacity='0'">
                 </div>
 
-                <h4 class="text-white font-bold mb-10 text-2xl md:text-3xl tracking-tight">תישארו מעודכנים, בואו נשמור על קשר:</h4>
+                <h4 class="text-white font-bold mb-10 text-2xl md:text-3xl tracking-tight text-center">תישארו מעודכנים, בואו נשמור על קשר:</h4>
                 
                 <div class="flex justify-center gap-5 md:gap-6 flex-wrap mb-14">
                     <!-- Website -->
